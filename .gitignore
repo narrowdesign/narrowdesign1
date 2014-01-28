@@ -1,0 +1,5 @@
+!.gitignore
+sftp-config.json
+prometheus.zip
+prometheus/*
+crossdomain.xml
