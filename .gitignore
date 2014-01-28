@@ -3,3 +3,4 @@ sftp-config.json
 prometheus.zip
 prometheus/*
 crossdomain.xml
+_working/*
