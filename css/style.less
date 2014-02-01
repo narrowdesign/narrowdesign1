@@ -1,3 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'icons';
+  src:url('fonts/icons.eot');
+  src:url('fonts/icons.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icons.svg#icons') format('svg'),
+    url('fonts/icons.woff') format('woff'),
+    url('fonts/icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .transition(@duration,@ease,@props){
   -webkit-transition: @props @duration @ease;
   -moz-transition: @props @duration @ease;
@@ -597,7 +610,6 @@ h1,h2{
   .hwa;
 }
 .email-icon:hover,.email-icon.red{
-  background:url('../img/email_icon-over.png');
   .transition(.1s,@easeOut,background);
   cursor:pointer;
   .hwa;
@@ -725,6 +737,31 @@ h1,h2{
   right:26px;
   bottom:22px;
 }
+#github{
+  .hwa;
+  position: fixed;
+  display: block;
+  z-index: 2;
+  font: normal normal normal 1.1em/1.5 @sans-serif;
+  letter-spacing: .04em;
+  width: 16%;
+  text-align: center;
+  padding-top: 100px;
+  .box-sizing;
+  a{
+    color: @darkGray;
+    padding: 20px 0;
+    .box-sizing;
+
+  }
+  a:hover{
+    color: @red
+  }
+}
+icon{
+  font: 2em 'icons';
+  margin: auto;
+}
 .twitter-icon-preload{
   background:url('../img/twitter_icon-over.png');
   position:absolute;
@@ -743,7 +780,6 @@ h1,h2{
   .hwa;
 }
 .twitter-icon:hover, .twitter-icon.red{
-  background:url('../img/twitter_icon-over.png');
   .transition(.1s,@easeOut,background);
   cursor:pointer;
   .hwa;

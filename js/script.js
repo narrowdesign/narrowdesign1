@@ -270,6 +270,10 @@ $(document).ready(function() {
 				startProjects();
 				_gaq.push(['_trackEvent', 'Instructions', 'So Far']);
 			})
+      $('.design-build').click(function(){
+        startProjects();
+        _gaq.push(['_trackEvent', 'Instructions', 'DESIGN BUILD']);
+      })
 			$('.email-icon').click(function(){
 				_gaq.push(['_trackEvent', 'Email', 'Launch', 'Icon']);
 				window.location.href="mailto:nick@narrowdesign.com?subject=So, I was on your site and..."
@@ -388,7 +392,6 @@ $(document).ready(function() {
 		$("#contact").css({
 			'height':'300px',
       color: darkGray,
-      background: 'transparent'
 		});
 	}
 	function pageResize () {
