@@ -431,7 +431,7 @@ $(document).ready(function() {
 		 	})		
 		}else{
 			$('.design-build').css({
-				'font-size':8*SCALE_FACTOR+'em',
+				'font-size':7*SCALE_FACTOR+'em',
 				'margin-left':(-1*SCALE_FACTOR)+'px',
 			});
 			$('#intro-text').css({
